@@ -26,7 +26,7 @@ Then install the requirements for running the parallel version with
 pip install -r requirements.txt
 ```
 
-To run each version consider
+To run either version consider
 ```
 ./nanoGenA.py
 ```
