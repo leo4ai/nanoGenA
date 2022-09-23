@@ -1,5 +1,5 @@
 # nanoGenA
-Nano genetic algorithm - a tiny implementation of a microgenetic algorithm.
+Nanogenetic algorithm - a tiny implementation of a microgenetic algorithm.
 
 The goal is to learn this sentence
 
