@@ -9,9 +9,9 @@ The goal is to learn this sentence
 
 Thus the fitness function is as simple as comparing a candidate (random) sentence against the goal sentence. Here, zero fit means optimal fit, namely that a candidate sentence is identical, character by character, to the goal sentence. 
 
-Evolve a small population of five candidate solutions at any given generation. In the selection stage, first sort by fittest first, and then crossover the first and third, and second and fourth, and then include 5 totally random additional candidate solutions. Then sort again by fittest first and select the top 5 fittest for the next round. Iterate until the (absolute) optimum is reached.
+Evolve a small population of five candidate solutions at any given generation. In the selection stage, first sort by fittest first, and then crossover the first and third, the second and fourth, and the third and fifth, and then include an additional 5 random candidate solutions. Then sort again by fittest first and select the top 5 fittest for the next round. Iterate until zero fit --- the (absolute) optimum ---, is reached.
 
-The non-parallel version is an object based implementation with no parallelism. On the other hand, the parallel version is implemented in a functional approach which includes performance optimizations derived from the inclusion of Ray, for distributed computing, and Numba, for JIT optimizations. By using the parallel version with 2 cores, a 20 fold runtime improvement may be noticed.
+The non-parallel version is an object based implementation with no parallelism. On the other hand, the parallel version is implemented in a functional style, which includes performance optimizations derived from Ray, for distributed computing, and Numba, for JIT optimizations. By using the parallel version with 2 cores, a 20 fold runtime improvement may be noticed.
 
 ## Installation and execution
 
