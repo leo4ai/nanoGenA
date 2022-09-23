@@ -3,7 +3,7 @@
 import random
 import time
 
-    
+
 class Candidate():
     
     def __init__(self, chrom=None):
@@ -16,8 +16,6 @@ class Candidate():
 
         self.alphabet_N = len(self.alphabet)
         self.target_N = len(self.target)
-
-
         
         if (chrom == None):
             self.chrom = [ self.alphabet[random.randint(0, self.alphabet_N-1)] for i in range(self.target_N) ]
@@ -50,7 +48,6 @@ class Evolution():
     def __init__(self):
         self.maxGen = 250*1000
 
-
     def offspring(self, candidates, p_cross):
         evo0 = [ candidates[i].crossover(candidates[i+2], p_cross) for i in range(3) ]
         evo1 = [ candidates[i].crossover(Candidate(), p_cross * 2) for i in range(5) ]
@@ -60,7 +57,6 @@ class Evolution():
         
         return evo[:5]        
     
-
     def evolve(self):
         candidates = ([ Candidate() for i in range(5) ])
         candidates.sort()
@@ -75,7 +71,6 @@ class Evolution():
             p_cross = p_cross + 5e-7
             i = i + 1
         
-
         return (i, candidates[0])
     
 
