@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import ray
 import numpy as np
 from numba import jit
@@ -52,7 +51,6 @@ def evolve(candidates, p_cross, max_iter):
         i = i + 1
     
     return candidates  
-
 
 
 def cycles(pool_N = 2):
