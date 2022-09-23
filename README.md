@@ -7,7 +7,7 @@ The goal is to learn this sentence
 > it was the age of wisdom, it was the age of foolishness, 
 > it was the epoch of belief.
 
-Thus the fitness function is as simple as comparing a candidate (random) sentence against the goal sentence. Here, zero fit means optimal fit meaning that a candidate sentence is identical, character by character, to the goal sentence. 
+Thus the fitness function is as simple as comparing a candidate (random) sentence against the goal sentence. Here, zero fit means optimal fit, namely that a candidate sentence is identical, character by character, to the goal sentence. 
 
 Evolve a small population of five candidate solutions at any given generation. In the selection stage, first sort by fittest first, and then crossover the first and third, and second and fourth, and then include 5 totally random additional candidate solutions. Then sort again by fittest first and select the top 5 fittest for the next round. Iterate until the (absolute) optimum is reached.
 
